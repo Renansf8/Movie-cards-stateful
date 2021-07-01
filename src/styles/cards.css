@@ -1,0 +1,18 @@
+.movie-card {
+  background-color: #282c34;
+  border-radius: 12px;
+  margin: 10px 10px;
+  transition: box-shadow 0.2s;
+}
+
+.movie-card:hover {
+  box-shadow: 0 0 15px #292828;
+}
+
+.movie-card h4 {
+  color: #eee;
+}
+
+.movie-card p {
+  color: #eee;
+}
