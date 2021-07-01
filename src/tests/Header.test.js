@@ -9,7 +9,7 @@ describe('Verifica o componente <Header />', () => {
     render(<Header />);
   });
 
-  it('Inclua o texto "Movie Cards Library" dentro do heading ', () => {
+  it('Inclua o texto "Movie Cards Library" dentro do heading', () => {
     const { getByRole } = render(<Header />);
     const header = getByRole('heading');
 
