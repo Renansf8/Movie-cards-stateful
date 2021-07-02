@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/imageInput.css';
 
 class ImagePathInput extends Component {
   render() {
     const { valueImageInput, handleChangeImage } = this.props;
 
     return (
-      <label htmlFor="image-input" data-testid="image-input-label">
-        Imagem
+        <label className="image" htmlFor="image-input" data-testid="image-input-label">
+        Imagem:
         <input
           type="text"
           name="imagePath"

@@ -8,6 +8,8 @@ import RatingInput from './RatingInput';
 import SelectInput from './SelectInput';
 import ButtonForm from './ButtonForm';
 
+import '../styles/addMovie.css';
+
 class AddMovie extends Component {
   constructor(props) {
     super(props);
@@ -54,32 +56,42 @@ class AddMovie extends Component {
     const { title, subtitle, imagePath, storyline, rating, genre } = this.state;
 
     return (
-      <form data-testid="add-movie-form">
-        <TitleInput valueTitleInput={ title } handleChangeTitle={ this.handleChange } />
-        <SubtitleInput
-          valueSubtitleInput={ subtitle }
-          handleChangeSubtitle={ this.handleChange }
-        />
-        <ImagePathInput
-          valueImageInput={ imagePath }
-          handleChangeImage={ this.handleChange }
-        />
-        <TextAreaInput
-          valueTextAreaInput={ storyline }
-          handleChangeTextArea={ this.handleChange }
-        />
-        <RatingInput
-          valueRatingInput={ rating }
-          handleChangeRating={ this.handleChange }
-        />
-        <SelectInput
-          valueSelectInput={ genre }
-          handleChangeSelect={ this.handleChange }
-        />
-        <ButtonForm
-          onClick={ this.handleSubmit }
-        />
-      </form>
+      <div className="form-container">
+        <form data-testid="add-movie-form">
+            <h2>Adicionar um filme</h2>
+            <div className='first-info'>
+              <TitleInput valueTitleInput={ title } handleChangeTitle={ this.handleChange } />
+              <SubtitleInput
+                valueSubtitleInput={ subtitle }
+                handleChangeSubtitle={ this.handleChange }
+              />
+              <ImagePathInput
+                valueImageInput={ imagePath }
+                handleChangeImage={ this.handleChange }
+              />
+            </div>
+            <div className='first-info'>
+            <TextAreaInput
+              valueTextAreaInput={ storyline }
+              handleChangeTextArea={ this.handleChange }
+              />
+              <RatingInput
+                valueRatingInput={ rating }
+                handleChangeRating={ this.handleChange }
+              />
+            <SelectInput
+              valueSelectInput={ genre }
+              handleChangeSelect={ this.handleChange }
+            />
+            </div>
+            <div class-name="button">
+              <ButtonForm
+              onClick={ this.handleSubmit }
+            />
+            </div>
+          
+       </form>
+      </div>
     );
   }
 }

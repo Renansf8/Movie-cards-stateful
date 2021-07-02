@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/select.css';
 
 class SelectInput extends Component {
   render() {
     const { valueSelectInput, handleChangeSelect } = this.props;
 
     return (
-      <label htmlFor="genre-input" data-testid="genre-input-label">
+      <label className='select' htmlFor="genre-input" data-testid="genre-input-label">
         Gênero
         <select
           name="genre"

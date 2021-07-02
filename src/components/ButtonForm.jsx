@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/buttonForm.css';
 
 class ButtonForm extends Component {
   render() {

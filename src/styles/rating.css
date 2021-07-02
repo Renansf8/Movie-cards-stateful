@@ -1,0 +1,13 @@
+.rate {
+  margin: 0 16px;
+}
+  
+.rate input {
+  margin-left: 8px;
+  width: 160px;
+  font-size: 16px;
+}
+
+.rate input:focus {
+  outline: 0;
+}

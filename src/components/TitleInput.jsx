@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/title.css'
 
 class TitleInput extends Component {
   render() {
     const { valueTitleInput, handleChangeTitle } = this.props;
 
     return (
-      <label htmlFor="title-input" data-testid="title-input-label">
-        Título
+        <label className="title" htmlFor="title-input" data-testid="title-input-label">
+        Título:
         <input
           type="text"
           name="title"

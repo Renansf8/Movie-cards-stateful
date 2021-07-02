@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/subtitle.css';
 
 class SubtitleInput extends Component {
   render() {
     const { valueSubtitleInput, handleChangeSubtitle } = this.props;
 
     return (
-      <label htmlFor="subtitle-input" data-testid="subtitle-input-label">
-        Subtítulo
+        <label className='subtitle' htmlFor="subtitle-input" data-testid="subtitle-input-label">
+        Subtítulo:
         <input
           type="text"
           name="subtitle"
