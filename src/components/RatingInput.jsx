@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/rating.css';
 
 class RatingInput extends Component {
   render() {
     const { valueRatingInput, handleChangeRating } = this.props;
 
     return (
-      <label htmlFor="rating-input" data-testid="rating-input-label">
+      <label className='rate' htmlFor="rating-input" data-testid="rating-input-label">
         Avaliação
         <input
           type="number"

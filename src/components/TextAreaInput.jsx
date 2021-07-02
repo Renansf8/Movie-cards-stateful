@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/textArea.css';
 
 class TextAreaInput extends Component {
   render() {
     const { valueTextAreaInput, handleChangeTextArea } = this.props;
 
     return (
-      <label htmlFor="storyline-input" data-testid="storyline-input-label">
-        Sinopse
+      <label className="textarea" htmlFor="storyline-input" data-testid="storyline-input-label">
+        Sinopse:
         <textarea
           name="storyline"
           value={ valueTextAreaInput }

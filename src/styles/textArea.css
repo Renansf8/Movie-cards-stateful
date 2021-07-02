@@ -1,0 +1,16 @@
+.textarea {
+  margin: 0 16px;
+}
+
+.textarea textarea {
+  margin-left: 8px;
+  width: 200px;
+  height: 50px;
+  font-size: 14px;
+  vertical-align: top;
+  resize: none;
+}
+
+.textarea textarea:focus {
+  outline: 0;
+}

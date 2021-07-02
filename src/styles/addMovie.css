@@ -1,0 +1,30 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #555555;
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #282c34;
+}
+
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container label {
+  color: #eee;
+}
+
+.first-info {
+  margin: 8px 0;
+  display: flex;
+}
+
+form h2{
+  color: #eee;
+  margin-bottom: 0;
+}
