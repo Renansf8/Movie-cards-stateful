@@ -59,16 +59,12 @@ class MovieLibrary extends Component {
   filteredMovies() {
     const { searchText, bookmarkedOnly, selectedGenre, movies } = this.state;
     const filtered = movies.map((movie) => {
-      const { title, subtitle, storyline, bookmarked, genre } = movie;
-      if (bookmarkedOnly && (title.includes(searchText)
-      || subtitle.includes(searchText)
-      || storyline.includes(searchText))) {
+      const { title, bookmarked, genre } = movie;
+      if (bookmarkedOnly && (title.toLowerCase().includes(searchText))) {
         if (genre.includes(selectedGenre) && bookmarked) {
           return movie;
         }
-      } else if ((title.includes(searchText)
-      || subtitle.includes(searchText)
-      || storyline.includes(searchText))
+      } else if ((title.toLowerCase().includes(searchText))
       && genre.includes(selectedGenre)) {
         return movie;
       }
